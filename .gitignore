@@ -1,0 +1,41 @@
+# -------- secrets --------
+.env
+*.env
+.env.*.local
+*.key
+*.pem
+*.pfx
+
+# -------- python --------
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# -------- node/next (혹시 존재할 때) --------
+node_modules/
+.next/
+out/
+
+# -------- os/editor --------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# -------- project outputs --------
+output/logs/
+output/cache/
+output/tmp/
+output/*.mp4
+output/*.gif
+output/*.png
+output/*.jpg
+
+# instagram/pages: 공개는 docs/images만
+# (output/images는 로컬 산출물이므로 ignore)
+output/images/
