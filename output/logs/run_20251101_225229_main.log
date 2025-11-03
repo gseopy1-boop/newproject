@@ -1,0 +1,19 @@
+﻿=== PROFILE=main ===
+[PAGES] synced -> C:\Users\User\newproject\docs\images\post_20251101_225310.jpg
+✓ DRY RUN - 업로드 시뮬레이션
+ - user_id: 1784xxxxxxxxxxxxx
+ - image_url: https://<github-username>.github.io/newproject/images/post_20251101_225310.jpg
+ - caption: APEC·대통령·SBS의 흐름...
+
+--- STDERR ---
+2025-11-01 22:53:10,294 INFO ✅ 1회 사이클 완료 (DRY RUN)
+2025-11-01 22:53:10,294 INFO  - 키워드: APEC, 대통령, SBS
+2025-11-01 22:53:10,294 INFO  - 참고 이미지: 다운로드.png
+2025-11-01 22:53:10,294 INFO  - 결과 파일: C:\Users\User\newproject\output\images\post_20251101_225310.jpg
+2025-11-01 22:53:10,294 INFO  - GitHub Pages URL: https://<github-username>.github.io/newproject/images/post_20251101_225310.jpg
+2025-11-01 22:53:10,294 INFO  - 캡션(요약): APEC·대통령·SBS의 흐름
+Exploring APEC, 대통령, and SBS.
+cozyroom
+
+#creative #mood #대통령 #pattern #SBS #shapes #generative #design ...
+

@@ -1,0 +1,48 @@
+{
+  "timestamp": "20251101_221552",
+  "keywords": [
+    "사운드 스펙트럼",
+    "lofi",
+    "기억의 파동",
+    "레트로 픽셀",
+    "미니멀 데스크",
+    "neon lights",
+    "빛 신호",
+    "네온 패턴",
+    "아날로그 감성",
+    "synthwave",
+    "디지털 회색",
+    "retro pc",
+    "abstract pattern",
+    "시티바이브",
+    "도시 리듬"
+  ],
+  "k3": [
+    "사운드 스펙트럼",
+    "lofi",
+    "기억의 파동"
+  ],
+  "caption": "사운드 스펙트럼·lofi·기억의 파동의 흐름\nExploring 사운드 스펙트럼, lofi, and 기억의 파동.\n🕹️ 💾 retro pc\n\n#aivisual #사운드 #color #trend #creative #abstract #aiart #파동 #스펙트럼 #art #daily #design #_ #generative #사운드_스펙트럼 #digitalart #기억의_파동 #retro #pixelart #shapes #mood #inspiration #lofi #pattern #nostalgia #기억의",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_221552.jpg",
+  "public_url": "https://<github-username>.github.io/newproject/images/post_20251101_221552.jpg",
+  "publish_result": {
+    "mode": "DRY",
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "https://<github-username>.github.io/newproject/images/post_20251101_221552.jpg",
+    "caption": "사운드 스펙트럼·lofi·기억의 파동의 흐름\nExploring 사운드 스펙트럼, lofi, and 기억의 파동.\n🕹️ 💾 retro pc\n\n#aivisual #사운드 #color #trend #creative #abstract #aiart #파동 #스펙트럼 #art #daily #design #_ #generative #사운드_스펙트럼 #digitalart #기억의_파동 #retro #pixelart #shapes #mood #inspiration #lofi #pattern #nostalgia #기억의",
+    "local_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_221552.jpg",
+    "note": "skipped (dry_run or missing token/user_id/image_url)"
+  },
+  "source_note": "trends",
+  "dry_run": true,
+  "theme_hint": "retro_pc",
+  "prompt": "사운드 스펙트럼·lofi·기억의 파동가 교차하는 장면, Visualizing 사운드 스펙트럼, lofi, and 기억의 파동., retro computer, pixel hints, low poly shapes, subtle CRT glow, mood: nostalgic, lofi, calm, palette: teal, warm gray, amber, composition: centered subject, soft vignette, high quality, detailed, cohesive",
+  "negative": "nsfw, text watermark, logo",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": null,
+    "locale": null
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\다운로드.png"
+}

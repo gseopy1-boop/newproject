@@ -1,0 +1,11 @@
+﻿=== PROFILE=main ===
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "C:\Users\User\newproject\main.py", line 15, in <module>
+    from app.publish.sync_pages import sync_to_pages
+  File "C:\Users\User\newproject\app\publish\sync_pages.py", line 2
+    """
+    ^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 588-589: truncated \UXXXXXXXX escape
+

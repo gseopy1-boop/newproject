@@ -1,0 +1,53 @@
+{
+  "timestamp": "20251102_155845",
+  "keywords": [
+    "쇼핑커넥트",
+    "쇼핑라이브",
+    "네이버쇼핑",
+    "우체국쇼핑",
+    "라부부인형",
+    "라디오스타",
+    "쇼핑 네이버",
+    "창원날씨",
+    "아디다스",
+    "알바천국",
+    "쇼핑엔티",
+    "홈앤쇼핑",
+    "라코스테",
+    "차 경고등",
+    "아프리카tv",
+    "차은우",
+    "차승원",
+    "차주영",
+    "차인표",
+    "차태현"
+  ],
+  "k3": [
+    "쇼핑커넥트",
+    "쇼핑라이브",
+    "네이버쇼핑"
+  ],
+  "caption": "쇼핑커넥트·쇼핑라이브·네이버쇼핑의 흐름\nExploring 쇼핑커넥트, 쇼핑라이브, and 네이버쇼핑.\ncozyroom\n\n#inspiration #generative #design #shapes #trend #creative #쇼핑라이브 #color #네이버쇼핑 #art #mood #pattern #aivisual #digitalart #쇼핑커넥트 #aiart #abstract #daily",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251102_155845.jpg",
+  "public_url": "https://<github-username>.github.io/newproject/images/post_20251102_155845.jpg",
+  "publish_result": {
+    "mode": "DRY",
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "https://<github-username>.github.io/newproject/images/post_20251102_155845.jpg",
+    "caption": "쇼핑커넥트·쇼핑라이브·네이버쇼핑의 흐름\nExploring 쇼핑커넥트, 쇼핑라이브, and 네이버쇼핑.\ncozyroom\n\n#inspiration #generative #design #shapes #trend #creative #쇼핑라이브 #color #네이버쇼핑 #art #mood #pattern #aivisual #digitalart #쇼핑커넥트 #aiart #abstract #daily",
+    "local_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251102_155845.jpg",
+    "note": "skipped (dry_run or missing token/user_id/image_url)"
+  },
+  "source_note": "trends",
+  "dry_run": true,
+  "theme_hint": "cozyroom",
+  "prompt": "쇼핑커넥트·쇼핑라이브·네이버쇼핑가 교차하는 장면, Visualizing 쇼핑커넥트, 쇼핑라이브, and 네이버쇼핑., warm cozy room, soft textiles, gentle light, film grain, mood: cozy, intimate, quiet, palette: cream, brown, olive, composition: corner framing, soft focus, high quality, detailed, cohesive | Retro 90s Pixel Art / Windows 95 Aesthetic | Windows 95 window frame, pixel-art. | CRT Monitor: 클래식하고 부피가 큰 모니터. 화면은 비어 있음. | Keyboard: 모니터 아래, 무각인 키캡의 픽셀화된 키보드. | Mouse: 모니터 오른쪽, 케이블로 연결된 마우스. | Document File: X 표시 점선 박스와 나침반 아이콘이 그려진 종이 문서. (Exploring/Location 암시) | Headline: 'Exploring the Digital Workspace'  Series: 'From My Desk'",
+  "negative": "cold tone, sterile look",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": null,
+    "locale": null
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\ref01.png"
+}

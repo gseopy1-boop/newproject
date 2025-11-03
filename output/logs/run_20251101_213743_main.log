@@ -1,0 +1,14 @@
+﻿=== PROFILE=main ===
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "C:\Users\User\newproject\main.py", line 243, in <module>
+    run_post_cycle()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\User\newproject\main.py", line 203, in run_post_cycle
+    public_url = sync_to_pages(out_path)
+  File "C:\Users\User\newproject\app\publish\sync_pages.py", line 38, in sync_to_pages
+    print(f"\u2705 GitHub Pages 동기화 완료 → {dst}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 0: illegal multibyte sequence
+

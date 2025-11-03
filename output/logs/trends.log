@@ -1,0 +1,83 @@
+[2025-11-02 14:00:17] [trends] FETCH RETRY 1/5 after 3.42s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:00:20] [trends] FETCH RETRY 2/5 after 5.49s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:00:25] [trends] FETCH RETRY 3/5 after 9.15s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:00:35] [trends] FETCH RETRY 4/5 after 16.90s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:00:52] [trends] FETCH FAIL (give up): object of type 'NoneType' has no len()
+[2025-11-02 14:00:52] [trends] CACHE WRITE: output\logs\cache\trends_2025-11-02.json (0 items)
+[2025-11-02 14:00:52] [trends] DEMO → []
+[2025-11-02 14:00:52] [trends] CACHE HIT (fresh): 2025-11-02 / 0 items
+[2025-11-02 14:00:52] [trends] DEMO → []
+[2025-11-02 14:12:41] [trends] FETCH RETRY 1/5 after 2.57s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:12:43] [trends] FETCH RETRY 2/5 after 5.89s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:12:49] [trends] FETCH RETRY 3/5 after 8.06s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:12:57] [trends] FETCH RETRY 4/5 after 16.87s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:13:14] [trends] FETCH FAIL (give up): object of type 'NoneType' has no len()
+[2025-11-02 14:13:14] [trends] CACHE WRITE: output\logs\cache\trends_2025-11-02.json (0 items)
+[2025-11-02 14:13:14] [trends] DEMO → []
+[2025-11-02 14:18:30] [trends] PN candidates: ['south-korea', 'south_korea', 'korea', 'worldwide']
+[2025-11-02 14:18:30] [trends] FETCH RETRY 1/5 after 2.69s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:18:32] [trends] FETCH RETRY 2/5 after 5.85s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:18:38] [trends] FETCH RETRY 3/5 after 9.20s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:18:47] [trends] FETCH RETRY 4/5 after 16.85s (err: object of type 'NoneType' has no len())
+[2025-11-02 14:19:04] [trends] FETCH FAIL (give up): object of type 'NoneType' has no len()
+[2025-11-02 14:19:04] [trends] DEFAULTS USED: 20 items
+[2025-11-02 14:19:04] [trends] CACHE WRITE: output\logs\cache\trends_2025-11-02.json (20 items)
+[2025-11-02 14:19:04] [trends] DEMO → ['파이썬', '해시태그', '테크 뉴스', '미니멀 디자인', '오토메이션']
+[2025-11-02 14:21:16] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 14:21:16] [trends] DEMO → ['파이썬', '해시태그', '테크 뉴스', '미니멀 디자인', '오토메이션']
+[2025-11-02 14:31:17] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 14:36:36] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 14:45:27] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 15:03:53] [trends] PN candidates: ['south-korea', 'south_korea', 'korea', 'worldwide']
+[2025-11-02 15:03:53] [trends] FETCH RETRY 1/5 after 3.63s (err: object of type 'NoneType' has no len())
+[2025-11-02 15:03:56] [trends] FETCH RETRY 2/5 after 4.66s (err: object of type 'NoneType' has no len())
+[2025-11-02 15:04:01] [trends] FETCH RETRY 3/5 after 9.77s (err: object of type 'NoneType' has no len())
+[2025-11-02 15:04:11] [trends] FETCH RETRY 4/5 after 16.52s (err: object of type 'NoneType' has no len())
+[2025-11-02 15:04:27] [trends] FETCH FAIL (give up): object of type 'NoneType' has no len()
+[2025-11-02 15:04:27] [trends] NAVER BACKUP OK: 20 items
+[2025-11-02 15:04:27] [trends] CACHE WRITE: output\logs\cache\trends_2025-11-02.json (20 items)
+[2025-11-02 15:04:27] [trends] DEMO → ['쇼핑커넥트', '쇼핑라이브', '네이버쇼핑', '우체국쇼핑', '라부부인형']
+[2025-11-02 15:26:19] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 15:37:37] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 15:43:16] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 15:52:12] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 15:54:14] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 15:58:45] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 16:07:04] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 16:24:14] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 16:25:06] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 16:45:54] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 16:48:06] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:01:50] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:12:25] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:22:06] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:28:35] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:39:14] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:52:03] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:53:41] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:54:53] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:56:16] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:57:01] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:57:38] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:58:11] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 17:58:45] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 18:00:02] [trends] CACHE HIT (fresh): 2025-11-02 / 20 items
+[2025-11-02 18:13:06] [trends] PN candidates: ['south-korea', 'south_korea', 'korea', 'worldwide']
+[2025-11-02 18:13:06] [trends] FETCH RETRY 1/5 after 2.34s (err: object of type 'NoneType' has no len())
+[2025-11-02 18:13:08] [trends] FETCH RETRY 2/5 after 5.57s (err: object of type 'NoneType' has no len())
+[2025-11-02 18:13:14] [trends] FETCH RETRY 3/5 after 8.85s (err: object of type 'NoneType' has no len())
+[2025-11-02 18:13:23] [trends] FETCH RETRY 4/5 after 16.26s (err: object of type 'NoneType' has no len())
+[2025-11-02 18:13:39] [trends] FETCH FAIL (give up): object of type 'NoneType' has no len()
+[2025-11-02 18:13:39] [trends] NAVER BACKUP OK: 30 items
+[2025-11-02 18:13:39] [trends] CACHE WRITE: output\logs\cache\trends_2025-11-02.json (30 items)
+[2025-11-03 21:09:57] [trends] PN candidates: ['south-korea', 'south_korea', 'korea', 'worldwide']
+[2025-11-03 21:09:57] [trends] FETCH RETRY 1/5 after 2.82s (err: object of type 'NoneType' has no len())
+[2025-11-03 21:09:59] [trends] FETCH RETRY 2/5 after 5.80s (err: object of type 'NoneType' has no len())
+[2025-11-03 21:10:05] [trends] FETCH RETRY 3/5 after 8.71s (err: object of type 'NoneType' has no len())
+[2025-11-03 21:10:14] [trends] FETCH RETRY 4/5 after 17.35s (err: object of type 'NoneType' has no len())
+[2025-11-03 21:10:31] [trends] FETCH FAIL (give up): object of type 'NoneType' has no len()
+[2025-11-03 21:10:31] [trends] NAVER BACKUP OK: 30 items
+[2025-11-03 21:10:31] [trends] CACHE WRITE: output\logs\cache\trends_2025-11-03.json (30 items)
+[2025-11-03 21:19:19] [trends] CACHE HIT (fresh): 2025-11-03 / 30 items
+[2025-11-03 21:26:02] [trends] CACHE HIT (fresh): 2025-11-03 / 30 items
+[2025-11-03 21:27:06] [trends] CACHE HIT (fresh): 2025-11-03 / 30 items

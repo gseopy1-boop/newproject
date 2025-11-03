@@ -1,0 +1,19 @@
+﻿=== PROFILE=main ===
+[PAGES] synced -> C:\Users\User\newproject\docs\images\post_20251101_221552.jpg
+✓ DRY RUN - 업로드 시뮬레이션
+ - user_id: 1784xxxxxxxxxxxxx
+ - image_url: https://<github-username>.github.io/newproject/images/post_20251101_221552.jpg
+ - caption: 사운드 스펙트럼·lofi·기억의 파동의 흐름...
+
+--- STDERR ---
+2025-11-01 22:15:52,330 INFO ✅ 1회 사이클 완료 (DRY RUN)
+2025-11-01 22:15:52,330 INFO  - 키워드: 사운드 스펙트럼, lofi, 기억의 파동
+2025-11-01 22:15:52,330 INFO  - 참고 이미지: 다운로드.png
+2025-11-01 22:15:52,330 INFO  - 결과 파일: C:\Users\User\newproject\output\images\post_20251101_221552.jpg
+2025-11-01 22:15:52,330 INFO  - GitHub Pages URL: https://<github-username>.github.io/newproject/images/post_20251101_221552.jpg
+2025-11-01 22:15:52,331 INFO  - 캡션(요약): 사운드 스펙트럼·lofi·기억의 파동의 흐름
+Exploring 사운드 스펙트럼, lofi, and 기억의 파동.
+🕹️ 💾 retro pc
+
+#aivisual #사운드 #color #trend #creative #ab...
+

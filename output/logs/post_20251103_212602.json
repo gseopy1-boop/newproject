@@ -1,0 +1,63 @@
+{
+  "timestamp": "20251103_212602",
+  "keywords": [
+    "타이틀리스트",
+    "삼성라이온즈",
+    "카카오페이지",
+    "삼성전자 주가",
+    "나혼자산다",
+    "상생페이백",
+    "삼성중공업",
+    "카카오웹툰",
+    "카카오뱅크",
+    "카카오 주가",
+    "ai 이미지 생성",
+    "탑텐키즈",
+    "탄소매트",
+    "나무위키",
+    "날씨예보",
+    "나는솔로",
+    "나라장터",
+    "서울날씨",
+    "삼성전자",
+    "삼성카드",
+    "창원날씨",
+    "카카오톡",
+    "캄보디아",
+    "카카오맵",
+    "삼성 한화",
+    "차 경고등",
+    "타스만",
+    "탄지로",
+    "나스닥",
+    "나이키"
+  ],
+  "k3": [
+    "타이틀리스트",
+    "삼성라이온즈",
+    "카카오페이지"
+  ],
+  "caption": "타이틀리스트·삼성라이온즈·카카오페이지의 흐름\nExploring 타이틀리스트, 삼성라이온즈, and 카카오페이지.\ncyberpunk\n\n#aiart #trend #타이틀리스트 #pattern #generative #abstract #삼성라이온즈 #inspiration #creative #color #mood #design #art #shapes #aivisual #daily #digitalart #카카오페이지",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251103_212602.jpg",
+  "public_url": "https://gseopy1-boop.github.io/newproject/images/post_20251103_212602.jpg",
+  "publish_result": {
+    "mode": "LIVE",
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "https://gseopy1-boop.github.io/newproject/images/post_20251103_212602.jpg",
+    "caption": "타이틀리스트·삼성라이온즈·카카오페이지의 흐름\nExploring 타이틀리스트, 삼성라이온즈, and 카카오페이지.\ncyberpunk\n\n#aiart #trend #타이틀리스트 #pattern #generative #abstract #삼성라이온즈 #inspiration #creative #color #mood #design #art #shapes #aivisual #daily #digitalart #카카오페이지",
+    "local_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251103_212602.jpg",
+    "note": "skipped (dry_run or missing token/user_id/image_url)"
+  },
+  "source_note": "trends",
+  "dry_run": false,
+  "theme_hint": "cyberpunk",
+  "prompt": "타이틀리스트·삼성라이온즈·카카오페이지가 교차하는 장면, Visualizing 타이틀리스트, 삼성라이온즈, and 카카오페이지., cyberpunk streets, rain reflections, holograms, moody lighting, mood: gritty, futuristic, electric, palette: cyan, magenta, black, composition: low angle, leading lines, high quality, detailed, cohesive | Retro 90s Pixel Art / Windows 95 Aesthetic | Windows 95 window frame, pixel-art. | CRT Monitor: 클래식하고 부피가 큰 모니터. 화면은 비어 있음. | Keyboard: 모니터 아래, 무각인 키캡의 픽셀화된 키보드. | Mouse: 모니터 오른쪽, 케이블로 연결된 마우스. | Document File: X 표시 점선 박스와 나침반 아이콘이 그려진 종이 문서. (Exploring/Location 암시) | Headline: 'Exploring the Digital Workspace'  Series: 'From My Desk'",
+  "negative": "overexposed, flat lighting",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": null,
+    "locale": null
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\ref01.png"
+}

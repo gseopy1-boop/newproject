@@ -1,0 +1,14 @@
+﻿=== PROFILE=main ===
+[trends] fetch error: The request failed: Google returned a response with code 429
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "C:\Users\User\newproject\main.py", line 284, in <module>
+    run_post_cycle()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\User\newproject\main.py", line 211, in run_post_cycle
+    profile = get_profile(None)   # PROFILE=kr|en|jp
+  File "C:\Users\User\newproject\app\utils\profiles.py", line 23, in get_profile
+    raise ProfileNotFound(f"profile '{pid}' not found. Check profiles.json or set PROFILE env.")
+app.utils.profiles.ProfileNotFound: profile 'main' not found. Check profiles.json or set PROFILE env.
+

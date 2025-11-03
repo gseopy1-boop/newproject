@@ -1,0 +1,271 @@
+# -*- coding: utf-8 -*-
+from __future__ import annotations
+import os
+from typing import Optional, TYPE_CHECKING
+
+try:
+    from PIL import Image, ImageDraw, ImageFont, ImageFilter
+except Exception:
+    Image = None
+
+if TYPE_CHECKING:
+    from PIL import Image as PILImage
+
+def _safe_open(path: Optional[str]) -> Optional["PILImage.Image"]:
+    if not path or not Image:
+        return None
+    try:
+        im = Image.open(path)
+        im.load()
+        return im  # type: ignore[return-value]
+    except Exception:
+        return None
+
+def _fit_content(content: "PILImage.Image", w: int, h: int) -> "PILImage.Image":
+    """콘텐츠를 대상 영역(w, h)에 레터박스 없이 채우도록 리사이즈 및 크롭."""
+    img_w, img_h = content.size
+    if img_w == 0 or img_h == 0:
+        return Image.new("RGB", (w, h), (255, 255, 255))
+
+    scale = max(w / img_w, h / img_h)
+    new_w, new_h = int(img_w * scale), int(img_h * scale)
+    content = content.resize((new_w, new_h), resample=Image.LANCZOS)
+    left, top = (new_w - w) // 2, (new_h - h) // 2
+    return content.crop((left, top, left + w, top + h))
+
+def _dithered_bar(w: int, h: int, color1=(212, 208, 200), color2=(192, 188, 180)) -> "PILImage.Image":
+    """두 가지 색상을 사용한 디더링 패턴 바를 생성합니다."""
+    bar = Image.new("RGB", (w, h))
+    dr = ImageDraw.Draw(bar)
+    for y in range(h):
+        for x in range(w):
+            dr.point((x, y), color1 if (x + y) % 2 == 0 else color2)
+    return bar
+
+def _pixelate(im: "PILImage.Image", block: int = 8) -> "PILImage.Image":
+    w, h = im.size
+    dw, dh = max(1, w // block), max(1, h // block)
+    return im.resize((dw, dh), Image.NEAREST).resize((w, h), Image.NEAREST)
+
+def _try_font(size: int) -> "ImageFont.FreeTypeFont|ImageFont.ImageFont":
+    """픽셀 아트에 어울리는 비트맵/고정폭 폰트를 우선적으로 시도합니다."""
+    try:
+        # W95FA와 같은 픽셀 폰트가 있다면 최우선 사용
+        return ImageFont.truetype("W95FA.otf", size=size)
+    except Exception:
+        try:
+            # 시스템 기본 고정폭 폰트 시도
+            return ImageFont.truetype("cour.ttf", size=size) # Courier New
+        except Exception:
+            # 최후의 보루: PIL 기본 비트맵 폰트
+            return ImageFont.load_default()
+
+def _draw_pixel_text(dr, xy, text, font, fill=(0,0,0)):
+    """텍스트를 픽셀 스타일로 두껍게 그립니다 (그림자 효과)."""
+    x, y = xy
+    # 그림자 (검은색)
+    dr.text((x + 1, y + 1), text, font=font, fill=(0, 0, 0, 180))
+    # 원본 텍스트
+    dr.text((x, y), text, font=font, fill=fill)
+
+# --------- 프레임 드로잉 ----------
+def _draw_bevel(dr, rect, width=1, light=(255, 255, 255), dark=(128, 128, 128), sunken=False):
+    """입체 테두리(Bevel)를 그립니다."""
+    x0, y0, x1, y1 = rect
+    if sunken:
+        light, dark = dark, light
+
+    for i in range(width):
+        # top, left (light)
+        dr.line([(x0 + i, y0 + i), (x1 - i - 1, y0 + i)], fill=light)
+        dr.line([(x0 + i, y0 + i), (x0 + i, y1 - i - 1)], fill=light)
+        # bottom, right (dark)
+        dr.line([(x0 + i, y1 - i - 1), (x1 - i - 1, y1 - i - 1)], fill=dark)
+        dr.line([(x1 - i - 1, y0 + i), (x1 - i - 1, y1 - i - 1)], fill=dark)
+
+def _draw_ctrl_button(dr, x0, y0, w, h, label):
+    """Win95 스타일 컨트롤 버튼을 그립니다."""
+    # 1. 검은색 테두리 추가
+    dr.rectangle([x0, y0, x0 + w, y0 + h], outline=(0, 0, 0), width=1)
+    # 2. 배경 채우기 (따뜻한 베이지)
+    dr.rectangle([x0 + 1, y0 + 1, x0 + w - 1, y0 + h - 1], fill=(220, 215, 205))
+
+    # 3. 단순화된 1px 입체 테두리 (내부)
+    _draw_bevel(dr, (x0 + 1, y0 + 1, x0 + w - 1, y0 + h - 1), width=1, light=(255,255,255), dark=(128,128,128))
+
+    # 3. 레이블 (—, □, ×) 그리기 (두꺼운 픽셀 스타일)
+    cx, cy = x0 + w // 2, y0 + h // 2
+    if label == "—":
+        dr.rectangle([cx - 6, cy, cx + 6, cy + 2], fill=(0, 0, 0)) # 더 두껍고 중앙에 가깝게
+    elif label == "□":
+        dr.rectangle([cx - 5, cy - 5, cx + 5, cy + 5], outline=(0, 0, 0), width=2)
+        dr.line([cx - 5, cy - 6, cx + 5, cy - 6], fill=(255, 255, 255)) # 하이라이트 유지
+    elif label == "×":
+        for i in range(2): # 두껍게
+            dr.line([cx - 4 + i, cy - 4, cx + 4 + i, cy + 4], fill=(0, 0, 0))
+            dr.line([cx - 4 + i, cy + 4, cx + 4 + i, cy - 4], fill=(0, 0, 0))
+
+def _four_color_icon(dr, x, y, s):
+    """검은 간격이 있는 청키한 4색 아이콘을 그립니다."""
+    dr.rectangle([x, y, x + s, y + s], fill=(0, 0, 0)) # 검은 배경
+    u = (s - 2) // 2 # 사각형 한 변 (간격 고려)
+    # 채도를 더 높여 대비 강화
+    # 청록색
+    dr.rectangle([x + 1, y + 1, x + 1 + u, y + 1 + u], fill=(0, 192, 192))
+    # 빨강
+    dr.rectangle([x + 2 + u, y + 1, x + s - 1, y + 1 + u], fill=(255, 64, 64))
+    # 파랑
+    dr.rectangle([x + 1, y + 2 + u, x + 1 + u, y + s - 1], fill=(64, 128, 255))
+    # 노랑
+    dr.rectangle([x + 2 + u, y + 2 + u, x + s - 1, y + s - 1], fill=(255, 224, 0))
+
+def _draw_frame(
+    dr: "ImageDraw.ImageDraw",
+    base: "PILImage.Image",
+    *,
+    prompt: str,
+    FRAME_PAD: int,
+    TITLE_H: int,
+    FOOTER_H: int,
+    BORDER_THICK: int,
+    CLIENT_PAD: int,
+    FOOT_TEXT: str,
+):
+    W, H = base.size
+    win_rect = (FRAME_PAD, FRAME_PAD, W - FRAME_PAD, H - FRAME_PAD)
+    x0, y0, x1, y1 = win_rect
+
+    # --- 1. 창 프레임 (튀어나온 3D 효과) ---
+    _draw_bevel(dr, win_rect, width=2, light=(255,255,255), dark=(0,0,0))
+    dr.rectangle((x0+2, y0+2, x1-2, y1-2), fill=(220, 215, 205)) # 베이스 채우기
+
+    # --- 2. 타이틀바 (디더링 패턴, 아이콘, 버튼) ---
+    title_bar_rect = (x0 + 2, y0 + 2, x1 - 2, y0 + TITLE_H)
+    dither_bar = _dithered_bar(title_bar_rect[2] - title_bar_rect[0], title_bar_rect[3] - title_bar_rect[1])
+    base.paste(dither_bar, (title_bar_rect[0], title_bar_rect[1]))
+
+    # 좌측 아이콘
+    icon_s = min(28, TITLE_H - 8)
+    _four_color_icon(dr, x0 + 8, y0 + (TITLE_H - icon_s) // 2 + 2, icon_s)
+
+    # 우측 버튼 3개
+    btn_w, btn_h, gap = 32, TITLE_H - 20, 2 # 버튼 크기 및 간격 조정
+    bx = x1 - 8 - (btn_w * 3 + gap * 2)
+    by = y0 + 10
+    for i, label in enumerate(["—", "□", "×"]):
+        _draw_ctrl_button(dr, bx + i * (btn_w + gap), by, btn_w, btn_h, label)
+
+    # --- 3. 하단 바 (Footer) ---
+    footer_rect = (x0 + 2, y1 - FOOTER_H, x1 - 2, y1 - 2)
+    dither_footer = _dithered_bar(footer_rect[2] - footer_rect[0], footer_rect[3] - footer_rect[1])
+    base.paste(dither_footer, (footer_rect[0], footer_rect[1]))
+
+    # 하단 바 텍스트
+    f = _try_font(max(16, FOOTER_H - 16))
+    tw = int(dr.textlength(FOOT_TEXT, font=f))
+    th = getattr(f, "size", 20)
+    tx = footer_rect[0] + (footer_rect[2] - footer_rect[0] - int(tw)) // 2
+    ty = footer_rect[1] + (footer_rect[3] - footer_rect[1] - th) // 2
+    _draw_pixel_text(dr, (tx, ty), FOOT_TEXT, font=f, fill=(0,0,0))
+
+    # --- 4. 내부(클라이언트) 영역 (움푹 들어간 효과) ---
+    client_rect = (x0 + 2, y0 + TITLE_H, x1 - 2, y1 - FOOTER_H)
+    # 흰색 배경 채우기
+    dr.rectangle(client_rect, fill=(255, 255, 255))
+    # 두꺼운 검은색 테두리
+    dr.rectangle(client_rect, outline=(0, 0, 0), width=BORDER_THICK)
+
+    # 콘텐츠가 들어갈 실제 영역 좌표 반환
+    pad = BORDER_THICK + CLIENT_PAD
+    return (client_rect[0] + pad,
+            client_rect[1] + pad,
+            client_rect[2] - pad,
+            client_rect[3] - pad)
+
+def _get_setting(key: str, default: int) -> int:
+    """
+    환경변수 key를 정수로 읽는다.
+    - 숫자만 들어오면 그대로 int
+    - '1080px', 'size=1080' 등 섞여 들어와도 첫 숫자 추출
+    - 완전 엉망이면 default로 복구
+    """
+    raw = os.getenv(key, "")
+    if raw is None or str(raw).strip() == "":
+        return int(default)
+    s = str(raw).strip()
+    try:
+        return int(s)
+    except ValueError:
+        try:
+            # 12.0 같은 것도 허용
+            return int(float(s))
+        except Exception:
+            import re
+            m = re.search(r"\\d+", s)
+            if m:
+                return int(m.group(0))
+            print(f"[image_gen] WARN: invalid int for {key}={s!r}, fallback={default}")
+            return int(default)
+
+def generate_image_with_reference(
+    prompt: str,
+    reference_img_path: Optional[str] = None,
+    **kwargs,
+):
+    """
+    Win95 스타일 프레임을 생성하고, 참조 이미지가 있으면 내부에 삽입합니다.
+    참조 이미지가 없으면 빈 흰색 영역으로 채워진 프레임을 반환합니다.
+
+    환경변수 또는 kwargs로 설정을 제어할 수 있습니다.
+    - OUT_SIDE, FRAME_PAD, TITLE_H, FOOTER_H, CLIENT_PAD, BORDER_THICK
+    - FOOTER_TEXT, PIXELATE, PIXELATE_BLOCK
+    """
+    if Image is None:
+        # Pillow이 없는 경우 빈 바이트 반환 또는 예외 발생
+        return None
+
+    # --- 설정값 로드 (kwargs 우선, 없으면 환경변수, 그것도 없으면 기본값) ---
+    OUT_SIDE = _get_setting("OUT_SIDE", 1080)
+    FRAME_PAD = _get_setting("FRAME_PAD", 36)      # 프레임 두께 증가
+    TITLE_H = _get_setting("TITLE_H", 64)          # 타이틀바 두께 증가
+    FOOTER_H = _get_setting("FOOTER_H", 56)          # 풋터 두께 증가
+    CLIENT_PAD = _get_setting("CLIENT_PAD", 12)      # 내부 여백 증가
+    BORDER_THICK = _get_setting("BORDER_THICK", 6)
+    FOOT_TEXT = kwargs.get("footer_text", os.getenv("FOOTER_TEXT", "From My Desk"))
+    DO_PIXELATE = kwargs.get("pixelate", os.getenv("PIXELATE", "0").lower() in ("1", "true"))
+    PIXELATE_BLOCK = _get_setting("PIXELATE_BLOCK", 8)
+
+    # --- 베이스 캔버스 생성 (따뜻한 베이지/회색) ---
+    W = H = OUT_SIDE
+    base = Image.new("RGBA", (W, H), (220, 215, 205, 255)) # Faded Sepia/Beige
+    dr = ImageDraw.Draw(base)
+
+    # --- 프레임 그리기 ---
+    client_rect = _draw_frame(
+        dr, base, prompt=prompt,
+        FRAME_PAD=FRAME_PAD, TITLE_H=TITLE_H, FOOTER_H=FOOTER_H,
+        BORDER_THICK=BORDER_THICK, CLIENT_PAD=CLIENT_PAD, FOOT_TEXT=FOOT_TEXT
+    )
+
+    # --- 콘텐츠 로드 및 삽입 ---
+    content = _safe_open(reference_img_path)
+    if content:
+        # 클라이언트 영역 크기 계산
+        cx0, cy0, cx1, cy1 = client_rect
+        cw, ch = cx1 - cx0, cy1 - cy0
+
+        # 콘텐츠를 영역에 맞게 리사이즈/크롭
+        content = _fit_content(content.convert("RGB"), cw, ch)
+
+        # 옵션: 픽셀화 및 필터 적용
+        if DO_PIXELATE:
+            content = _pixelate(content, block=PIXELATE_BLOCK)
+        try:
+            content = content.filter(ImageFilter.GaussianBlur(radius=0.3))
+        except Exception:
+            pass
+
+        # 최종 캔버스에 콘텐츠 붙여넣기
+        base.paste(content, (cx0, cy0))
+
+    return base

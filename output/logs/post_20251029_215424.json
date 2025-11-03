@@ -1,0 +1,28 @@
+{
+  "timestamp": "20251029_215424",
+  "keyword": "fashion",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\cycle_output.png",
+  "result": {
+    "mode": "reference+prompt",
+    "keyword": "fashion",
+    "caption": "여행 감성으로 본 오늘의 트렌드 🌿 fashion",
+    "hashtags": [
+      "#fashion",
+      "#여행",
+      "#현대적인",
+      "#todaystyle",
+      "#daily",
+      "#instamood"
+    ],
+    "prompt_full": "참고 이미지의 포즈, 조명, 분위기를 반영하되 완전히 새로운 가상 인물로 생성. 'fashion' 아이템을 착용하거나 들고 있는 모습. 현실적인 질감과 자연광, 인스타그램 감성. (기본 프롬프트: 현대적인 분위기의 여행 콘셉트 사진, 'fashion' 관련 장면)",
+    "reference_used": "C:\\Users\\User\\newproject\\assets\\ref01.png",
+    "output_path": "C:\\Users\\User\\newproject\\output\\images\\cycle_output.png",
+    "publish": {
+      "dry_run": true,
+      "user_id": "1784xxxxxxxxxxxxx",
+      "image_url": "(미설정)",
+      "caption": "여행 감성으로 본 오늘의 트렌드 🌿 fashion\n\n#fashion #여행 #현대적인 #todaystyle #daily #instamood",
+      "note": "실제 업로드를 하려면 dry_run=False 와 PUBLIC_IMAGE_BASE_URL 을 설정하세요."
+    }
+  }
+}

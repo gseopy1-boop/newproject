@@ -1,0 +1,48 @@
+{
+  "timestamp": "20251101_221015",
+  "keywords": [
+    "아날로그 감성",
+    "abstract pattern",
+    "네온 패턴",
+    "디지털 회색",
+    "lofi",
+    "도시 리듬",
+    "시티바이브",
+    "빛 신호",
+    "사운드 스펙트럼",
+    "neon lights",
+    "기억의 파동",
+    "레트로 픽셀",
+    "미니멀 데스크",
+    "retro pc",
+    "synthwave"
+  ],
+  "k3": [
+    "아날로그 감성",
+    "abstract pattern",
+    "네온 패턴"
+  ],
+  "caption": "아날로그 감성·abstract pattern·네온 패턴의 흐름\nExploring 아날로그 감성, abstract pattern, and 네온 패턴.\n🧘 📐 minimal desk\n\n#clean #workspace #inspiration #aesthetic #daily #design #abstract #creative #shapes #pattern #네온_패턴 #generative #아날로그_감성 #aivisual #mood #_ #trend #minimal #aiart #digitalart #abstract_pattern #아날로그 #color #감성 #art #네온",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_221015.jpg",
+  "public_url": "",
+  "publish_result": {
+    "mode": "DRY",
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "",
+    "caption": "아날로그 감성·abstract pattern·네온 패턴의 흐름\nExploring 아날로그 감성, abstract pattern, and 네온 패턴.\n🧘 📐 minimal desk\n\n#clean #workspace #inspiration #aesthetic #daily #design #abstract #creative #shapes #pattern #네온_패턴 #generative #아날로그_감성 #aivisual #mood #_ #trend #minimal #aiart #digitalart #abstract_pattern #아날로그 #color #감성 #art #네온",
+    "local_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_221015.jpg",
+    "note": "skipped (dry_run or missing token/user_id/image_url)"
+  },
+  "source_note": "trends",
+  "dry_run": true,
+  "theme_hint": "minimal_desk",
+  "prompt": "아날로그 감성·abstract pattern·네온 패턴가 교차하는 장면, Visualizing 아날로그 감성, abstract pattern, and 네온 패턴., minimal desk setup, clean layout, soft lighting, mood: serene, aesthetic, neat, palette: off-white, charcoal, sage, composition: top-down, balanced spacing, high quality, detailed, cohesive",
+  "negative": "busy background, overcrowded elements",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": null,
+    "locale": null
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\ref01.png"
+}

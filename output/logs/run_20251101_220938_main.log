@@ -1,0 +1,19 @@
+﻿=== PROFILE=main ===
+[PAGES] skip (PAGES_DIR not set) src=C:\Users\User\newproject\output\images\post_20251101_221015.jpg
+✓ DRY RUN - 업로드 시뮬레이션
+ - user_id: 1784xxxxxxxxxxxxx
+ - image_url: (missing)
+ - caption: 아날로그 감성·abstract pattern·네온 패턴의 흐름...
+
+--- STDERR ---
+2025-11-01 22:10:15,687 INFO ✅ 1회 사이클 완료 (DRY RUN)
+2025-11-01 22:10:15,687 INFO  - 키워드: 아날로그 감성, abstract pattern, 네온 패턴
+2025-11-01 22:10:15,687 INFO  - 참고 이미지: ref01.png
+2025-11-01 22:10:15,687 INFO  - 결과 파일: C:\Users\User\newproject\output\images\post_20251101_221015.jpg
+2025-11-01 22:10:15,687 INFO  - GitHub Pages URL: 
+2025-11-01 22:10:15,687 INFO  - 캡션(요약): 아날로그 감성·abstract pattern·네온 패턴의 흐름
+Exploring 아날로그 감성, abstract pattern, and 네온 패턴.
+🧘 📐 minimal desk
+
+#clean #workspace #...
+

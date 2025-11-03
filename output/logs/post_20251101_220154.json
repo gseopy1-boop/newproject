@@ -1,0 +1,47 @@
+{
+  "timestamp": "20251101_220154",
+  "keywords": [
+    "neon lights",
+    "레트로 픽셀",
+    "도시 리듬",
+    "디지털 회색",
+    "빛 신호",
+    "시티바이브",
+    "미니멀 데스크",
+    "기억의 파동",
+    "사운드 스펙트럼",
+    "abstract pattern",
+    "retro pc",
+    "synthwave",
+    "아날로그 감성",
+    "lofi",
+    "네온 패턴"
+  ],
+  "k3": [
+    "neon lights",
+    "레트로 픽셀",
+    "도시 리듬"
+  ],
+  "caption": "neon lights·레트로 픽셀·도시 리듬의 흐름\nExploring neon lights, 레트로 픽셀, and 도시 리듬.\ncozyroom\n\n#creative #픽셀 #lights #daily #trend #_ #레트로 #리듬 #art #neon_lights #pattern #color #레트로_픽셀 #inspiration #generative #shapes #abstract #neon #mood #design #도시_리듬 #aiart #도시 #aivisual #digitalart",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_220154.jpg",
+  "public_url": "",
+  "publish_result": {
+    "dry_run": true,
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "https://gseopy1-boop.github.io/images/post_20251101_220154.jpg",
+    "caption": "neon lights·레트로 픽셀·도시 리듬의 흐름\nExploring neon lights, 레트로 픽셀, and 도시 리듬.\ncozyroom\n\n#creative #픽셀 #lights #daily #trend #_ #레트로 #리듬 #art #neon_lights #pattern #color #레트로_픽셀 #inspiration #generative #shapes #abstract #neon #mood #design #도시_리듬 #aiart #도시 #aivisual #digitalart",
+    "note": "실제 업로드는 dry_run=False + 토큰/유저ID/베이스URL 필요"
+  },
+  "source_note": "trends",
+  "dry_run": true,
+  "theme_hint": "cozyroom",
+  "prompt": "neon lights·레트로 픽셀·도시 리듬가 교차하는 장면, Visualizing neon lights, 레트로 픽셀, and 도시 리듬., warm cozy room, soft textiles, gentle light, film grain, mood: cozy, intimate, quiet, palette: cream, brown, olive, composition: corner framing, soft focus, high quality, detailed, cohesive",
+  "negative": "cold tone, sterile look",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": null,
+    "locale": null
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\다운로드.png"
+}

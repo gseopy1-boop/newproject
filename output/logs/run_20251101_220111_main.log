@@ -1,0 +1,23 @@
+﻿=== PROFILE=main ===
+[PAGES] skip (PAGES_DIR not set) src=C:\Users\User\newproject\output\images\post_20251101_220154.jpg
+🧪 DRY RUN — 업로드 시뮬레이션
+  - user_id: 1784xxxxxxxxxxxxx
+  - image_url: https://gseopy1-boop.github.io/images/post_20251101_220154.jpg
+  - caption: neon lights·레트로 픽셀·도시 리듬의 흐름
+Exploring neon lights, 레트로 픽셀, and 도시 리듬.
+cozyroom
+
+#creative #픽셀 #lights #daily #trend #_ #레트로 #리듬 #art #neon_lights #pattern #color #레트로_픽셀 #inspiration #generative #shapes #abstract #neon #mood #design #도시_리듬 #aiart #도시 #aivisual #digitalart
+
+--- STDERR ---
+2025-11-01 22:01:54,298 INFO ✅ 1회 사이클 완료 (DRY RUN)
+2025-11-01 22:01:54,298 INFO  - 키워드: neon lights, 레트로 픽셀, 도시 리듬
+2025-11-01 22:01:54,298 INFO  - 참고 이미지: 다운로드.png
+2025-11-01 22:01:54,298 INFO  - 결과 파일: C:\Users\User\newproject\output\images\post_20251101_220154.jpg
+2025-11-01 22:01:54,298 INFO  - GitHub Pages URL: 
+2025-11-01 22:01:54,298 INFO  - 캡션(요약): neon lights·레트로 픽셀·도시 리듬의 흐름
+Exploring neon lights, 레트로 픽셀, and 도시 리듬.
+cozyroom
+
+#creative #픽셀 #lights #daily #trend #_ ...
+

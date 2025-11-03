@@ -1,0 +1,64 @@
+{
+  "timestamp": "20251030_231332",
+  "keywords": [
+    "fashion",
+    "travel",
+    "iphone"
+  ],
+  "k3": [
+    "fashion",
+    "travel",
+    "iphone"
+  ],
+  "caption": "fashion, travel, iphone — 이 세 가지 결로 한 장면을 만들었어요. 오늘의 무드: calm. (fashion·travel·iphone를 trendy 무드로 잇는 구도)",
+  "hashtags": [
+    "#fashion",
+    "#travel",
+    "#iphone",
+    "#오늘의사진",
+    "#일상기록",
+    "#분위기",
+    "#감성사진",
+    "#디지털아트",
+    "#레트로",
+    "#무드",
+    "#컬러",
+    "#트렌드"
+  ],
+  "image": "C:\\Users\\User\\newproject\\output\\images\\post_20251030_231332.png",
+  "public_url": "C:\\Users\\User\\images\\docs\\post_20251030_231332.png",
+  "publish_result": {
+    "dry_run": true,
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "https://gseopy1-boop.github.io/images/post_20251030_231332.png",
+    "caption": "fashion, travel, iphone — 이 세 가지 결로 한 장면을 만들었어요. 오늘의 무드: calm. (fashion·travel·iphone를 trendy 무드로 잇는 구도)\n\n#fashion #travel #iphone #오늘의사진 #일상기록 #분위기 #감성사진 #디지털아트 #레트로 #무드 #컬러 #트렌드",
+    "note": "실제 업로드는 dry_run=False + 토큰/유저ID/베이스URL 필요"
+  },
+  "source_note": "trends",
+  "dry_run": true,
+  "theme": {
+    "id": "minimal_desk",
+    "weight": 3,
+    "mood": [
+      "calm",
+      "clean"
+    ],
+    "color": [
+      "white",
+      "soft gray"
+    ],
+    "style": [
+      "soft_light",
+      "natural_shadow"
+    ]
+  },
+  "theme_hint": "mood: calm,clean; colors: white,soft gray; style: soft_light,natural_shadow",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": "fallback_snaps_kr",
+    "locale": "ko"
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\다운로드.png",
+  "base_prompt": "fashion, ,  — 이 세 가지 결로 한 장면을 만들었어요. 오늘의 무드: 차분함."
+}

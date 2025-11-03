@@ -1,0 +1,63 @@
+{
+  "timestamp": "20251101_225310",
+  "keywords": [
+    "APEC",
+    "대통령",
+    "SBS",
+    "동아일보",
+    "알고리즘",
+    "국민일보",
+    "더보기",
+    "서울경제",
+    "시진핑",
+    "위성락",
+    "한중",
+    "뉴스타파",
+    "로또",
+    "보기",
+    "채택",
+    "협력",
+    "KBS",
+    "MBC",
+    "NAVER",
+    "YTN",
+    "경주",
+    "고객센터",
+    "뉴스스탠드",
+    "라이브러리",
+    "모두",
+    "바로가기",
+    "본문",
+    "서비스안내",
+    "언론사",
+    "연합뉴스"
+  ],
+  "k3": [
+    "APEC",
+    "대통령",
+    "SBS"
+  ],
+  "caption": "APEC·대통령·SBS의 흐름\nExploring APEC, 대통령, and SBS.\ncozyroom\n\n#creative #mood #대통령 #pattern #SBS #shapes #generative #design #daily #trend #aivisual #abstract #APEC #art #aiart #inspiration #digitalart #color",
+  "image_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_225310.jpg",
+  "public_url": "https://<github-username>.github.io/newproject/images/post_20251101_225310.jpg",
+  "publish_result": {
+    "mode": "DRY",
+    "user_id": "1784xxxxxxxxxxxxx",
+    "image_url": "https://<github-username>.github.io/newproject/images/post_20251101_225310.jpg",
+    "caption": "APEC·대통령·SBS의 흐름\nExploring APEC, 대통령, and SBS.\ncozyroom\n\n#creative #mood #대통령 #pattern #SBS #shapes #generative #design #daily #trend #aivisual #abstract #APEC #art #aiart #inspiration #digitalart #color",
+    "local_path": "C:\\Users\\User\\newproject\\output\\images\\post_20251101_225310.jpg",
+    "note": "skipped (dry_run or missing token/user_id/image_url)"
+  },
+  "source_note": "trends",
+  "dry_run": true,
+  "theme_hint": "cozyroom",
+  "prompt": "APEC·대통령·SBS가 교차하는 장면, Visualizing APEC, 대통령, and SBS., warm cozy room, soft textiles, gentle light, film grain, mood: cozy, intimate, quiet, palette: cream, brown, olive, composition: corner framing, soft focus, high quality, detailed, cohesive",
+  "negative": "cold tone, sterile look",
+  "locale": "ko",
+  "profile": {
+    "id": "kr",
+    "handle": null,
+    "locale": null
+  },
+  "reference_asset": "C:\\Users\\User\\newproject\\assets\\다운로드.png"
+}

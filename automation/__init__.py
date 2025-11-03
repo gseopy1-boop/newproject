@@ -1,0 +1,1 @@
+from automation.caption_builder import build_caption

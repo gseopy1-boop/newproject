@@ -1,0 +1,37 @@
+{
+  "retro_pc": {
+    "style": "retro computer, pixel hints, low poly shapes, subtle CRT glow",
+    "mood": ["nostalgic","lofi","calm"],
+    "palette": ["teal","warm gray","amber"],
+    "composition": ["centered subject","soft vignette"],
+    "neg": ["nsfw","text watermark","logo"]
+  },
+  "minimal_desk": {
+    "style": "minimal desk setup, clean layout, soft lighting",
+    "mood": ["serene","aesthetic","neat"],
+    "palette": ["off-white","charcoal","sage"],
+    "composition": ["top-down","balanced spacing"],
+    "neg": ["busy background","overcrowded elements"]
+  },
+  "synthwave_city": {
+    "style": "synthwave, neon city, futuristic skyline, glow",
+    "mood": ["dreamy","night drive","neon"],
+    "palette": ["magenta","cyber blue","violet"],
+    "composition": ["rule of thirds","wide angle"],
+    "neg": ["daylight","desaturated colors"]
+  },
+  "cyberpunk": {
+    "style": "cyberpunk streets, rain reflections, holograms, moody lighting",
+    "mood": ["gritty","futuristic","electric"],
+    "palette": ["cyan","magenta","black"],
+    "composition": ["low angle","leading lines"],
+    "neg": ["overexposed","flat lighting"]
+  },
+  "cozyroom": {
+    "style": "warm cozy room, soft textiles, gentle light, film grain",
+    "mood": ["cozy","intimate","quiet"],
+    "palette": ["cream","brown","olive"],
+    "composition": ["corner framing","soft focus"],
+    "neg": ["cold tone","sterile look"]
+  }
+}
